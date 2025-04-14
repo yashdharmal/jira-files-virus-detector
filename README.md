@@ -1,24 +1,47 @@
-# Jira Malware Scanner
+# 🛡️ Jira Malware Scanner
 
-This Node.js application monitors a Jira instance for file uploads and automatically checks them against VirusTotal for malware. If a malicious file is detected, it is automatically deleted from the Jira ticket.
+[![Node.js Version](https://img.shields.io/badge/node-%3E%3D14.0.0-brightgreen)](https://nodejs.org/)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![VirusTotal API](https://img.shields.io/badge/VirusTotal-API-orange)](https://www.virustotal.com/gui/)
+[![Jira API](https://img.shields.io/badge/Jira-API-blue)](https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/)
 
-## Prerequisites
+A robust Node.js application that automatically scans files uploaded to Jira tickets for malware using VirusTotal's API. If malicious content is detected, the file is automatically removed from the ticket to protect your organization.
+
+## ✨ Features
+
+- 🔍 Real-time file scanning using VirusTotal API
+- 🚫 Automatic removal of malicious files
+- 📝 Comprehensive logging system
+- 🔒 Secure webhook handling
+- ⚡ Fast and efficient processing
+- 📊 Detailed error tracking
+
+## 📋 Prerequisites
 
 - Node.js (v14 or higher)
 - A Jira instance with API access
 - A VirusTotal API key
 - A publicly accessible server to receive Jira webhooks
 
-## Setup
+## 🚀 Quick Start
 
-1. Clone this repository
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/yourusername/jira-malware-scanner.git
+   cd jira-malware-scanner
+   ```
+
 2. Install dependencies:
+
    ```bash
    npm install
    ```
-3. Create a `.env` file in the root directory with the following variables:
 
-   ```
+3. Configure environment variables:
+   Create a `.env` file in the root directory:
+
+   ```env
    PORT=3000
    JIRA_DOMAIN=your-jira-domain.atlassian.net
    JIRA_EMAIL=your-jira-email
@@ -26,56 +49,83 @@ This Node.js application monitors a Jira instance for file uploads and automatic
    VIRUSTOTAL_API_KEY=your-virustotal-api-key
    ```
 
-4. Set up a Jira webhook:
-   - Go to Jira Settings > System > WebHooks
+4. Set up Jira webhook:
+   - Navigate to Jira Settings > System > WebHooks
    - Add a new webhook
    - Set the URL to: `https://your-server/webhook/jira`
    - Select the "Attachment created" event
    - Save the webhook
 
-## Running the Application
+## 🏃 Running the Application
 
-Development mode:
+### Development Mode
 
 ```bash
 npm run dev
 ```
 
-Production mode:
+### Production Mode
 
 ```bash
 npm start
 ```
 
-## How it Works
+## 🔧 How it Works
 
-1. When a file is uploaded to a Jira ticket, Jira sends a webhook to this application
-2. The application downloads the file content
-3. The file is sent to VirusTotal for scanning
-4. If VirusTotal detects malware, the file is automatically deleted from the Jira ticket
-5. The process is logged for monitoring
+1. 📤 File uploaded to Jira ticket
+2. 🔄 Jira sends webhook to application
+3. 📥 Application downloads file content
+4. 🔍 File sent to VirusTotal for scanning
+5. 🚫 If malware detected, file is automatically deleted
+6. 📝 Process is logged for monitoring
 
-## Security Considerations
+## 🔒 Security Best Practices
 
-- Store your API keys securely
-- Use HTTPS for your webhook endpoint
-- Consider implementing webhook authentication
-- Monitor the application logs for any issues
+- 🔑 Store API keys securely using environment variables
+- 🔐 Use HTTPS for webhook endpoints
+- 🔍 Implement webhook authentication
+- 📊 Monitor application logs regularly
+- 🔄 Keep dependencies updated
+- 🛡️ Implement rate limiting for API calls
 
-## Error Handling
+## 🚨 Error Handling
 
-The application includes error handling for:
+The application includes comprehensive error handling for:
 
 - Failed webhook processing
 - VirusTotal API errors
 - Jira API errors
 - File download issues
+- Network connectivity problems
+- Authentication failures
 
-## Logging
+## 📝 Logging
 
-The application logs important events to the console, including:
+The application logs the following events:
 
-- Webhook received
+- Webhook reception
 - File scanning results
 - File deletion events
 - Error messages
+- API response times
+- Security events
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [VirusTotal](https://www.virustotal.com/) for their malware scanning API
+- [Atlassian](https://www.atlassian.com/) for Jira API
+- All contributors who have helped improve this project
