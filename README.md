@@ -1,11 +1,14 @@
-# 🛡️ Jira Malware Scanner
+# 🛡️ Jira Files Virus Detector
 
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D14.0.0-brightgreen)](https://nodejs.org/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![VirusTotal API](https://img.shields.io/badge/VirusTotal-API-orange)](https://www.virustotal.com/gui/)
 [![Jira API](https://img.shields.io/badge/Jira-API-blue)](https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/)
 
-A robust Node.js application that automatically scans files uploaded to Jira tickets for malware using VirusTotal's API. If malicious content is detected, the file is automatically removed from the ticket to protect your organization.
+A Node.js application that automatically scans file attachments in Jira tickets for malware using VirusTotal's API. This security tool helps protect your Jira instance by automatically detecting and removing malicious files.
+
+[![GitHub stars](https://img.shields.io/github/stars/yashdharmal/jira-files-virus-detector?style=social)](https://github.com/yashdharmal/jira-files-virus-detector)
+[![GitHub forks](https://img.shields.io/github/forks/yashdharmal/jira-files-virus-detector?style=social)](https://github.com/yashdharmal/jira-files-virus-detector)
 
 ## ✨ Features
 
@@ -28,8 +31,8 @@ A robust Node.js application that automatically scans files uploaded to Jira tic
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/yourusername/jira-malware-scanner.git
-   cd jira-malware-scanner
+   git clone https://github.com/yashdharmal/jira-files-virus-detector.git
+   cd jira-files-virus-detector
    ```
 
 2. Install dependencies:
@@ -120,6 +123,8 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+For major changes, please open an issue first to discuss what you would like to change.
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -129,3 +134,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [VirusTotal](https://www.virustotal.com/) for their malware scanning API
 - [Atlassian](https://www.atlassian.com/) for Jira API
 - All contributors who have helped improve this project
+
+## 📞 Support
+
+If you encounter any issues or have questions, please [open an issue](https://github.com/yashdharmal/jira-files-virus-detector/issues) on GitHub.
+
+## 📊 Project Status
+
+This project is actively maintained. Check the [issues](https://github.com/yashdharmal/jira-files-virus-detector/issues) page for current development status and planned features.
