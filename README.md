@@ -1,7 +1,6 @@
 # 🛡️ Jira Files Virus Detector
 
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D14.0.0-brightgreen)](https://nodejs.org/)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![VirusTotal API](https://img.shields.io/badge/VirusTotal-API-orange)](https://www.virustotal.com/gui/)
 [![Jira API](https://img.shields.io/badge/Jira-API-blue)](https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/)
 
@@ -125,16 +124,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 For major changes, please open an issue first to discuss what you would like to change.
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- [VirusTotal](https://www.virustotal.com/) for their malware scanning API
-- [Atlassian](https://www.atlassian.com/) for Jira API
-- All contributors who have helped improve this project
-
 ## 📞 Support
 
 If you encounter any issues or have questions, please [open an issue](https://github.com/yashdharmal/jira-files-virus-detector/issues) on GitHub.
@@ -142,3 +131,9 @@ If you encounter any issues or have questions, please [open an issue](https://gi
 ## 📊 Project Status
 
 This project is actively maintained. Check the [issues](https://github.com/yashdharmal/jira-files-virus-detector/issues) page for current development status and planned features.
+
+## 🙏 Acknowledgments
+
+- [VirusTotal](https://www.virustotal.com/) for their malware scanning API
+- [Atlassian](https://www.atlassian.com/) for Jira API
+- All contributors who have helped improve this project
